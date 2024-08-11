@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+</head>
+<body>
+    <video autoplay loop muted id="myVideo">
+        <source src="assets/Matrix Rain.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="box">
+            <b style="color: #2ed820; font-family: Arial, Helvetica, sans-serif;">LogIn</b>
+            <table>
+                <tr>
+                    <td><input class="input" type="text" id="username" name="username" placeholder="Username" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="email" id="email" name="email" placeholder="Email" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="password" id="password" name="password" placeholder="Password" size="30" required></td>
+                </tr>
+                <tr>
+                    <td style="color:#2ed820; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 13px; text-decoration: none;" class="b2">Forget Password</td>
+                </tr>
+                
+                <tr>
+                    <td class="center"><button class="b1" type="button" onclick="validLogin()">LogIn</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="message">
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javasctipt.js"></script>
+</body>
+</html>
